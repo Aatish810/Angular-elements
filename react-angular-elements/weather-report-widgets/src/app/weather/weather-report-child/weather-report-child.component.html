@@ -1,0 +1,54 @@
+<div *ngIf="report!==null" class="container">
+  <div class="card text-white bg-success mb-3" style="max-width: 20rem;">
+    <div class="card-header">{{"Weather Report of - "}}{{report.name | titlecase}}</div>
+    <div class="card-body">
+      <img [src]="'https://openweathermap.org/img/w/' + report.weather[0].icon + '.png'" height="120px" width="120px"
+        [alt]="report.weather[0].description" [title]="report.weather[0].description">
+      <span [innerText]="report.weather[0].description | titlecase"></span>
+      <br>
+      <table class="table">
+        <tbody style="color:white;">
+          <tr>
+            <th>Temperature</th>
+            <td>
+              <span class="badge badge-dark">{{report.main.temp}} | &#8451;</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Max-Temperature</th>
+            <td>
+              <span class="badge badge-dark">{{report.main.temp_max}} | &#8451;</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Min-Temperature</th>
+            <td>
+              <span class="badge badge-dark">{{report.main.temp_min}} | &#8451;</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Humidity</th>
+            <td>
+              <span class="badge badge-dark">{{report.main.humidity}}</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Sunrise</th>
+            <td>
+              <span class="badge badge-dark">{{sunrise}}</span>
+            </td>
+          </tr>
+          <tr>
+            <th>Sunset</th>
+            <td>
+              <span class="badge badge-dark">{{sunset}}</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<div class="container" *ngIf="error!==null">
+    <h3>Sorry! The city is not found! Please try the correct city name!</h3>
+</div>

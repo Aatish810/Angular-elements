@@ -1,0 +1,16 @@
+{
+  "name": "ng-hc-chart",
+  "version": "1.0.0",
+  "description": "This is a demo example",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Angular",
+    "AngularElements"
+  ],
+  "author": "Pravinkumar R. D.",
+  "license": "ISC",
+  "files": ["dist"]
+}

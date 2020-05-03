@@ -1,0 +1,17 @@
+<h1 [innerText]="title"></h1>
+<hr>
+<form>
+    <fieldset>
+        <legend>Security Form</legend>
+        <div class="form-group">
+            <label for="inputEmail">Email Id</label>
+            <input type="email" class="form-control" name="name" id="inputEmail" placeholder="Enter your Email Id" [(ngModel)]="credential.name">
+        </div>
+        <div class="form-group">
+            <label for="inputPassword">Password</label>
+            <input type="password" class="form-control" name="password" id="inputPassword" placeholder="Enter your Password" [(ngModel)]="credential.password">
+        </div>
+        <button type="submit" (click)="onCredentialSubmit($event)" class="btn btn-primary">Login</button>
+        <button type="reset" class="btn btn-primary">Reset</button>
+    </fieldset>
+</form>

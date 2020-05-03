@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-10">
+        <input type="text" class="form-control" #city placeholder="Enter City Name">
+      </div>
+      <div class="col-md-2">
+        <button type="submit" class="btn btn-primary" (click)="onChange(city.value)">Show Weahter</button>
+      </div>
+    </div>
+  </div>
+  <br>
+  <div *ngIf="weatherCity!==''">
+    <weather-forecast-child [city]="weatherCity"></weather-forecast-child>
+  </div>

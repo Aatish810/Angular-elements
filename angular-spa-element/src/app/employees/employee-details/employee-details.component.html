@@ -1,0 +1,48 @@
+<h1 [innerText]="title+employee.employeeName"></h1>
+<br>
+<table class="table table-hover table-striped">
+    <tbody>
+        <tr>
+            <th>Employee Id</th>
+            <td><span [innerText]="employee.employeeId"></span></td>
+        </tr>
+        <tr>
+            <th>Employee Name</th>
+            <td><span [innerText]="employee.employeeName"></span></td>
+        </tr>
+        <tr>
+            <th>Address</th>
+            <td><span [innerText]="employee.address"></span></td>
+        </tr>
+        <tr>
+            <th>City</th>
+            <td><span [innerText]="employee.city"></span></td>
+        </tr>
+        <tr>
+            <th>Country</th>
+            <td><span [innerText]="employee.country"></span></td>
+        </tr>
+        <tr>
+            <th>ZipCode</th>
+            <td><span [innerText]="employee.zipcode"></span></td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td><span [innerText]="employee.email"></span></td>
+        </tr>
+        <tr>
+            <th>Contact #</th>
+            <td><span [innerText]="employee.phone"></span></td>
+        </tr>
+        <tr>
+            <th>Skillsets</th>
+            <td><span [innerText]="employee.skillSets"></span></td>
+        </tr>
+        <tr>
+            <th>Avatar</th>
+            <td>
+                <img [src]="employee.avatar" [alt]="employee.employeeName">
+            </td>
+        </tr>
+    </tbody>
+</table>

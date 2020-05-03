@@ -1,0 +1,32 @@
+<h1 [innerText]="title"></h1>
+<hr>
+<h6 [innerText]="subTitle"></h6>
+<br>
+<table class="table table-hover table-striped" *ngIf="employees && employees.length>0;else noDataTemplate">
+    <thead>
+        <tr>
+            <th>Employee Name</th>
+            <th>City</th>
+            <th>Email</th>
+            <th>Contact #</th>
+            <th>Show Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let employee of employees">
+            <td><span [innerText]="employee.employeeName"></span></td>
+            <td><span [innerText]="employee.city"></span></td>
+            <td><span [innerText]="employee.email"></span></td>
+            <td><span [innerText]="employee.phone"></span></td>
+            <td><button (click)="onEmployeeSelection(employee)" class="btn btn-info">Show Details</button></td>
+        </tr>
+    </tbody>
+</table>
+
+<ng-template #noDataTemplate>
+    <h3>Data not found! Please try after sometime!</h3>
+</ng-template>
+
+<div *ngIf="selectedEmployee">
+    <employee-details [employee]="selectedEmployee"></employee-details>
+</div>
