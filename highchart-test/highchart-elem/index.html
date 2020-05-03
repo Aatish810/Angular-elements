@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ng Highcharts Element</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <ng-highchart-element 
+    title="Highcharts Chart ng Element!!"
+    data-url="http://localhost:9090/api/chartsdata"
+    chart-title="Company Quarter Sales"
+    chart-type="line"
+    y-title="Amount $"
+    ></ng-highchart-element>
+    <ng-highchart-element 
+    title="Highcharts Chart ng Element!!"
+    data-url="http://localhost:9090/api/multiseries/chartsdata"
+    chart-title="Training Feedbacks"
+    chart-type="column"
+    y-title="1-10 Scale"
+    ></ng-highchart-element>
+    <ng-highchart-element 
+    title="Highcharts Chart ng Element!!"
+    data-url="http://localhost:3000/charts-data.json"
+    chart-title="Company Quarter Sales"
+    chart-type="line"
+    y-title="Amount $"
+    ></ng-highchart-element>
+    <script src="highchart-elem.js"></script>
+
+</body>
+</html>

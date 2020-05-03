@@ -1,0 +1,66 @@
+[
+    {
+        "name": "Q1 Sales",
+        "type": "column",
+        "data": [
+            8000,
+            4000,
+            3378,
+            6236
+        ],
+        "categories": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+    },
+    {
+        "name": "Q2 Sales",
+        "type": "column",
+        "data": [
+            9800,
+            4300,
+            3780,
+            6900
+        ],
+        "categories": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+    },
+    {
+        "name": "Q3 Sales",
+        "type": "column",
+        "data": [
+            1200,
+            2300,
+            3700,
+            6100
+        ],
+        "categories": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+    },
+    {
+        "name": "Q4 Sales",
+        "type": "column",
+        "data": [
+            4000,
+            3300,
+            4700,
+            5100
+        ],
+        "categories": [
+            "Q1",
+            "Q2",
+            "Q3",
+            "Q4"
+        ]
+    }
+]

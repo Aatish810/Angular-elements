@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>DomInteractionSection2</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <style rel="stylesheet" href="style.css"></style>
+</head>
+<body>
+  <dom-interaction title="Adding Two Numbers" number2= "100" number1="100"></dom-interaction>
+  <script>
+      const domElem = document.querySelector('dom-interaction');
+      domElem.addEventListener('onCalculation', (event) => {
+          alert(event.detail);
+          console.log(event);
+      })
+  </script>
+  <script src="dom-interaction-ex.js"></script>
+</body>
+</html>
